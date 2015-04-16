@@ -20,5 +20,40 @@
   <height>22</height>
   <frames>
     <frame index="0">images\spr_victim_0.png</frame>
+    <frame index="1">images\spr_victim_1.png</frame>
+    <frame index="2">images\spr_victim_2.png</frame>
+    <frame index="3">images\spr_victim_3.png</frame>
+    <frame index="4">images\spr_victim_4.png</frame>
+    <frame index="5">images\spr_victim_5.png</frame>
+    <frame index="6">images\spr_victim_6.png</frame>
+    <frame index="7">images\spr_victim_7.png</frame>
+    <frame index="8">images\spr_victim_8.png</frame>
+    <frame index="9">images\spr_victim_9.png</frame>
+    <frame index="10">images\spr_victim_10.png</frame>
+    <frame index="11">images\spr_victim_11.png</frame>
+    <frame index="12">images\spr_victim_12.png</frame>
+    <frame index="13">images\spr_victim_13.png</frame>
+    <frame index="14">images\spr_victim_14.png</frame>
+    <frame index="15">images\spr_victim_15.png</frame>
+    <frame index="16">images\spr_victim_16.png</frame>
+    <frame index="17">images\spr_victim_17.png</frame>
+    <frame index="18">images\spr_victim_18.png</frame>
+    <frame index="19">images\spr_victim_19.png</frame>
+    <frame index="20">images\spr_victim_20.png</frame>
+    <frame index="21">images\spr_victim_21.png</frame>
+    <frame index="22">images\spr_victim_22.png</frame>
+    <frame index="23">images\spr_victim_23.png</frame>
+    <frame index="24">images\spr_victim_24.png</frame>
+    <frame index="25">images\spr_victim_25.png</frame>
+    <frame index="26">images\spr_victim_26.png</frame>
+    <frame index="27">images\spr_victim_27.png</frame>
+    <frame index="28">images\spr_victim_28.png</frame>
+    <frame index="29">images\spr_victim_29.png</frame>
+    <frame index="30">images\spr_victim_30.png</frame>
+    <frame index="31">images\spr_victim_31.png</frame>
+    <frame index="32">images\spr_victim_32.png</frame>
+    <frame index="33">images\spr_victim_33.png</frame>
+    <frame index="34">images\spr_victim_34.png</frame>
+    <frame index="35">images\spr_victim_35.png</frame>
   </frames>
 </sprite>

@@ -346,6 +346,21 @@ if (speedx&lt;0) {move_contact_solid(180,-speedx); speedx=0;}
           <argument>
             <kind>1</kind>
             <string>///Kill/Knife
+
+if (instance_exists(obj_carryknife))
+{
+    obj_carryknife.y = obj_player.y+4;
+    obj_carryknife.x = obj_player.x+17;
+
+        if (sprite_index == spr_pooping || sprite_index == spr_pooping2)
+        {
+            obj_carryknife.depth = 201;
+        }
+        else
+            obj_carryknife.depth = -501;
+}
+
+
 /*
 if (instance_exists(obj_knife) &amp;&amp; distance_to_object(obj_knife) &lt; 4)
 {
@@ -358,7 +373,7 @@ if (instance_exists(obj_knife) &amp;&amp; distance_to_object(obj_knife) &lt; 4)
         instance_create(obj_player.x + 17, obj_player.y + 4, obj_carryknife);
     }
 }
-*/
+
 if (instance_exists(obj_carryknife))
 {
         if (keyboard_check_pressed(killkey) &amp;&amp; instance_exists(obj_victim) &amp;&amp; distance_to_point(obj_victim.x - 2, obj_victim.y) &lt; 4 &amp;&amp; !moreknife)
@@ -413,7 +428,7 @@ if (instance_exists(obj_carryknife))
     obj_carryknife.y = obj_player.y+4;
     obj_carryknife.x = obj_player.x+17;
 }
-
+*/
 </string>
           </argument>
         </arguments>

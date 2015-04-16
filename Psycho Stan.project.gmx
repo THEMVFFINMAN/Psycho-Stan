@@ -75,6 +75,7 @@
       <sprite>sprites\spr_paint1</sprite>
       <sprite>sprites\spr_light</sprite>
       <sprite>sprites\spr_fishbowl</sprite>
+      <sprite>sprites\spr_fishbowlcover</sprite>
       <sprite>sprites\spr_fishstab</sprite>
       <sprite>sprites\spr_stapler</sprite>
     </sprites>
@@ -89,6 +90,7 @@
       <sprite>sprites\spr_victim_death_clean</sprite>
       <sprite>sprites\spr_victim_death</sprite>
       <sprite>sprites\spr_victim</sprite>
+      <sprite>sprites\spr_victimhigh</sprite>
     </sprites>
     <sprites name="MISC">
       <sprite>sprites\red</sprite>
@@ -152,10 +154,12 @@
       <object>objects\obj_desk</object>
       <object>objects\obj_trash</object>
       <object>objects\obj_sink</object>
+      <object>objects\obj_container</object>
       <object>objects\obj_door</object>
       <object>objects\obj_window</object>
       <object>objects\obj_paint</object>
       <object>objects\obj_light</object>
+      <object>objects\obj_fishbowlcover</object>
     </objects>
     <objects name="Office People">
       <object>objects\obj_snitch</object>
