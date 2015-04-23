@@ -49,15 +49,15 @@
       <sprite>sprites\spr_hp_fill</sprite>
       <sprite>sprites\spr_exp_bar</sprite>
       <sprite>sprites\spr_exp_fill</sprite>
-      <sprite>sprites\spr_HUD</sprite>
     </sprites>
     <sprite>sprites\spr_startbutton</sprite>
     <sprites name="Office People">
       <sprite>sprites\spr_snitch</sprite>
-    </sprites>
-    <sprites name="Logo">
-      <sprite>sprites\Snake_Skin_Logo</sprite>
-      <sprite>sprites\YOUR_logo</sprite>
+      <sprite>sprites\spr_snitchdead</sprite>
+      <sprite>sprites\spr_snitchhigh</sprite>
+      <sprite>sprites\spr_recept</sprite>
+      <sprite>sprites\spr_recepthigh</sprite>
+      <sprite>sprites\spr_receptdead</sprite>
     </sprites>
     <sprites name="Knife Sprites">
       <sprite>sprites\spr_cleanknife</sprite>
@@ -65,6 +65,8 @@
     </sprites>
     <sprites name="Office Stuff">
       <sprite>sprites\spr_cooler</sprite>
+      <sprite>sprites\spr_coolerhigh</sprite>
+      <sprite>sprites\spr_coolerdead</sprite>
       <sprite>sprites\spr_desk</sprite>
       <sprite>sprites\spr_bush1</sprite>
       <sprite>sprites\spr_bush2</sprite>
@@ -78,6 +80,7 @@
       <sprite>sprites\spr_fishbowlcover</sprite>
       <sprite>sprites\spr_fishstab</sprite>
       <sprite>sprites\spr_stapler</sprite>
+      <sprite>sprites\spr_smalltable</sprite>
     </sprites>
     <sprites name="Blocks">
       <sprite>sprites\spr_up</sprite>
@@ -100,24 +103,12 @@
     </sprites>
     <sprite>sprites\sprite56</sprite>
   </sprites>
-  <backgrounds name="background">
-    <background>background\background0</background>
-    <background>background\background2</background>
-    <background>background\background10</background>
-    <background>background\background3</background>
-    <background>background\background9</background>
-  </backgrounds>
+  <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\still_frame.gml</script>
   </scripts>
-  <fonts name="fonts">
-    <font>fonts\ScoreFont</font>
-    <font>fonts\debug</font>
-    <font>fonts\SnakeSkinCredit</font>
-    <font>fonts\Health</font>
-    <font>fonts\enemy_hp</font>
-  </fonts>
+  <fonts name="fonts"/>
   <objects name="objects">
     <object>objects\obj_player</object>
     <objects name="Room">
@@ -160,9 +151,11 @@
       <object>objects\obj_paint</object>
       <object>objects\obj_light</object>
       <object>objects\obj_fishbowlcover</object>
+      <object>objects\obj_smalltable</object>
     </objects>
     <objects name="Office People">
       <object>objects\obj_snitch</object>
+      <object>objects\Receptionist</object>
     </objects>
     <objects name="Enemies">
       <object>objects\obj_enemy</object>
@@ -171,10 +164,6 @@
       <object>objects\obj_victim</object>
       <object>objects\obj_victim_dead</object>
       <object>objects\obj_victim_dead_clean</object>
-    </objects>
-    <objects name="Logo">
-      <object>objects\Beginning1</object>
-      <object>objects\Beginning2</object>
     </objects>
     <objects name="Knives">
       <object>objects\obj_knife</object>

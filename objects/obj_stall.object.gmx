@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>200</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -91,7 +91,7 @@ if ( instance_exists(obj_player) &amp;&amp; distance_to_object(obj_player) &lt; 
         
         if (keyboard_check_pressed(ord('W')) || keyboard_check_pressed(vk_up))
         {
-            visible = 0;
+            //visible = 0;
             obj_player.sprite_index = spr_pooping; 
             obj_player.image_speed=0.167;
             obj_player.speedx = 0;
@@ -137,7 +137,7 @@ if (obj_player.sprite_index == spr_pooping)
     {
         keyboard_clear(ord('S'));
         obj_player.sprite_index = spr_right;
-        visible = 1;
+        //visible = 1;
     }
     if (keyboard_check_pressed(ord('E')))
     {

@@ -3,8 +3,8 @@
   <caption></caption>
   <width>770</width>
   <height>352</height>
-  <vsnap>1</vsnap>
-  <hsnap>1</hsnap>
+  <vsnap>11</vsnap>
+  <hsnap>11</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>-1</persistent>
@@ -225,14 +225,14 @@
     <instance objName="obj_desk" x="66" y="88" name="inst_FF7056F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_snitch" x="385" y="88" name="inst_00A516C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_victim" x="451" y="88" name="inst_74972863" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="UP" x="704" y="198" name="inst_1F5D0D94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="UP" x="726" y="198" name="inst_1F5D0D94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_doorg" x="286" y="88" name="inst_36B6D853" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cooler" x="264" y="66" name="inst_BF06AFD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawn" x="242" y="88" name="inst_2AE9F2A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lamp" x="154" y="66" name="inst_DCB3E910" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bush1" x="33" y="66" name="inst_D2E4F9EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bush1" x="143" y="66" name="inst_542EAF10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fishbowl" x="209" y="99" name="inst_AC43719D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Receptionist" x="605" y="88" name="inst_6E8296FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stapler" x="84" y="101" name="inst_57651129" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_knife" x="341" y="88" name="inst_164F8B4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trash" x="99" y="99" name="inst_CC4784D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
