@@ -6,6 +6,15 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="NonInter">
+      <sprite>sprites\spr_bush1</sprite>
+      <sprite>sprites\spr_bush2</sprite>
+      <sprite>sprites\spr_lamp</sprite>
+      <sprite>sprites\spr_stapler</sprite>
+      <sprite>sprites\spr_light</sprite>
+      <sprite>sprites\spr_paint1</sprite>
+      <sprite>sprites\spr_window</sprite>
+    </sprites>
     <sprites name="Bathroom">
       <sprite>sprites\spr_urinwat</sprite>
       <sprite>sprites\spr_mirror</sprite>
@@ -34,6 +43,8 @@
       <sprite>sprites\spr_left_toright</sprite>
       <sprite>sprites\spr_door</sprite>
       <sprite>sprites\spr_sitting</sprite>
+      <sprite>sprites\spr_sitting2</sprite>
+      <sprite>sprites\spr_sitting3</sprite>
       <sprite>sprites\spr_pooping</sprite>
       <sprite>sprites\spr_pooping2</sprite>
       <sprite>sprites\spr_collision_mask</sprite>
@@ -43,6 +54,7 @@
         <sprite>sprites\DO_NOT_USE</sprite>
         <sprite>sprites\sprite55</sprite>
       </sprites>
+      <sprite>sprites\sprite76</sprite>
     </sprites>
     <sprites name="EXP/HP">
       <sprite>sprites\spr_hp_bar</sprite>
@@ -68,19 +80,14 @@
       <sprite>sprites\spr_coolerhigh</sprite>
       <sprite>sprites\spr_coolerdead</sprite>
       <sprite>sprites\spr_desk</sprite>
-      <sprite>sprites\spr_bush1</sprite>
-      <sprite>sprites\spr_bush2</sprite>
-      <sprite>sprites\spr_lamp</sprite>
       <sprite>sprites\spr_sink</sprite>
       <sprite>sprites\spr_trash</sprite>
-      <sprite>sprites\spr_window</sprite>
-      <sprite>sprites\spr_paint1</sprite>
-      <sprite>sprites\spr_light</sprite>
       <sprite>sprites\spr_fishbowl</sprite>
       <sprite>sprites\spr_fishbowlcover</sprite>
       <sprite>sprites\spr_fishstab</sprite>
-      <sprite>sprites\spr_stapler</sprite>
       <sprite>sprites\spr_smalltable</sprite>
+      <sprite>sprites\spr_chairr</sprite>
+      <sprite>sprites\spr_chairl</sprite>
     </sprites>
     <sprites name="Blocks">
       <sprite>sprites\spr_up</sprite>
@@ -100,16 +107,31 @@
       <sprite>sprites\blue</sprite>
       <sprite>sprites\green</sprite>
       <sprite>sprites\yellow</sprite>
+      <sprite>sprites\BigFoot</sprite>
     </sprites>
     <sprite>sprites\sprite56</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\wallpaper1</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\still_frame.gml</script>
   </scripts>
-  <fonts name="fonts"/>
   <objects name="objects">
+    <objects name="Bathroom">
+      <object>objects\obj_mirror</object>
+      <object>objects\obj_divider</object>
+      <object>objects\obj_toiletblock</object>
+      <object>objects\obj_stall</object>
+      <object>objects\obj_handi</object>
+      <object>objects\obj_toilet</object>
+      <object>objects\obj_urin</object>
+      <object>objects\obj_papertowel</object>
+      <object>objects\obj_doorb</object>
+      <object>objects\obj_doorg</object>
+      <object>objects\obj_bathsink</object>
+    </objects>
     <object>objects\obj_player</object>
     <objects name="Room">
       <object>objects\UP</object>
@@ -123,35 +145,15 @@
       <object>objects\CAMERA</object>
     </objects>
     <objects name="Office Things">
-      <objects name="Bathroom">
-        <object>objects\obj_mirror</object>
-        <object>objects\obj_divider</object>
-        <object>objects\obj_toiletblock</object>
-        <object>objects\obj_stall</object>
-        <object>objects\obj_handi</object>
-        <object>objects\obj_toilet</object>
-        <object>objects\obj_urin</object>
-        <object>objects\obj_papertowel</object>
-        <object>objects\obj_doorb</object>
-        <object>objects\obj_doorg</object>
-        <object>objects\obj_bathsink</object>
-      </objects>
       <object>objects\obj_cooler</object>
       <object>objects\obj_fishbowl</object>
-      <object>objects\obj_bush1</object>
-      <object>objects\obj_bush2</object>
-      <object>objects\obj_stapler</object>
-      <object>objects\obj_lamp</object>
       <object>objects\obj_desk</object>
       <object>objects\obj_trash</object>
       <object>objects\obj_sink</object>
-      <object>objects\obj_container</object>
       <object>objects\obj_door</object>
-      <object>objects\obj_window</object>
-      <object>objects\obj_paint</object>
-      <object>objects\obj_light</object>
-      <object>objects\obj_fishbowlcover</object>
       <object>objects\obj_smalltable</object>
+      <object>objects\obj_chairr</object>
+      <object>objects\obj_chairl</object>
     </objects>
     <objects name="Office People">
       <object>objects\obj_snitch</object>
@@ -177,6 +179,15 @@
       <object>objects\yellowo</object>
       <object>objects\blueo</object>
       <object>objects\blueo2</object>
+    </objects>
+    <objects name="NonInter">
+      <object>objects\obj_bush1</object>
+      <object>objects\obj_bush2</object>
+      <object>objects\obj_lamp</object>
+      <object>objects\obj_stapler</object>
+      <object>objects\obj_light</object>
+      <object>objects\obj_paint</object>
+      <object>objects\obj_window</object>
     </objects>
   </objects>
   <rooms name="rooms">

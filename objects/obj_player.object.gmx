@@ -174,7 +174,7 @@ view_object = CAMERA;
             <kind>1</kind>
             <string>///Main Code
 
-if (sprite_index != spr_sitting &amp;&amp; sprite_index != spr_pooping &amp;&amp; sprite_index != spr_pooping2)
+if (sprite_index != spr_sitting &amp;&amp; sprite_index != spr_sitting3 &amp;&amp; sprite_index != spr_pooping &amp;&amp; sprite_index != spr_sitting2 &amp;&amp; sprite_index != spr_pooping2)
 {
 //Gravity and limiting the vspeed\\
 if (place_free(x,y+1)) {gravity=grav;}
@@ -349,8 +349,12 @@ if (speedx&lt;0) {move_contact_solid(180,-speedx); speedx=0;}
 
 if (instance_exists(obj_carryknife))
 {
+    if (sprite_index == spr_sitting3)
+        obj_carryknife.x = obj_player.x+7;
+    else
+        obj_carryknife.x = obj_player.x+17;
     obj_carryknife.y = obj_player.y+4;
-    obj_carryknife.x = obj_player.x+17;
+    
 
         if (sprite_index == spr_pooping || sprite_index == spr_pooping2)
         {
@@ -359,76 +363,6 @@ if (instance_exists(obj_carryknife))
         else
             obj_carryknife.depth = -501;
 }
-
-
-/*
-if (instance_exists(obj_knife) &amp;&amp; distance_to_object(obj_knife) &lt; 4)
-{
-    if (keyboard_check_pressed(killkey))
-    {
-        keyboard_clear(killkey);
-        hasknife = true;
-        with (obj_knife) instance_destroy();
-        
-        instance_create(obj_player.x + 17, obj_player.y + 4, obj_carryknife);
-    }
-}
-
-if (instance_exists(obj_carryknife))
-{
-        if (keyboard_check_pressed(killkey) &amp;&amp; instance_exists(obj_victim) &amp;&amp; distance_to_point(obj_victim.x - 2, obj_victim.y) &lt; 4 &amp;&amp; !moreknife)
-        {
-            keyboard_clear(killkey);
-            instance_create(obj_victim.x-1, obj_victim.y, obj_victim_dead);
-            with(obj_victim){instance_destroy();}
-            with(obj_carryknife){instance_destroy();}
-            
-            vix = obj_victim.x - 1;
-            viy = obj_victim.y;
-        }
-        
-        if (keyboard_check_pressed(killkey) &amp;&amp; instance_exists(obj_victim_dead_clean) &amp;&amp; distance_to_point(obj_victim_dead_clean.x + 14, obj_victim_dead_clean.y + 10) &lt; 4 &amp;&amp; !moreknife &amp;&amp; obj_carryknife.image_index == 0)
-        {
-            keyboard_clear(killkey);
-            obj_victim_dead_clean.image_index = 1;
-            with(obj_carryknife){instance_destroy();}
-        }
-        
-        if (sprite_index == spr_pooping)
-        {
-            obj_carryknife.depth = 201;
-        }
-        else
-            obj_carryknife.depth = -501;
-}
-
-if (instance_exists(obj_victim_dead_clean) &amp;&amp; instance_exists(obj_carryknife) &amp;&amp; keyboard_check_pressed(killkey))
-if( obj_victim_dead_clean.image_index = 0 &amp;&amp; distance_to_point(obj_victim_dead_clean.x + 14, obj_victim_dead_clean.y + 10) &lt; 6 )
-{
-    {
-        keyboard_clear(killkey);
-        obj_victim_dead_clean.image_index = 1;
-        with(obj_carryknife){instance_destroy();}
-    }
-}
-
-if (instance_exists(obj_victim_dead_clean)) 
-{
-    if (keyboard_check_pressed(killkey) &amp;&amp; obj_victim_dead_clean.image_index = 1 &amp;&amp; distance_to_point(obj_victim_dead_clean.x + 14, obj_victim_dead_clean.y + 10) &lt; 6)
-    {
-        keyboard_clear(killkey);
-        obj_victim_dead_clean.image_index = 0;
-        instance_create(obj_player.x + !(facing = right) + 17, obj_player.y + 4, obj_carryknife); 
-        obj_carryknife.image_index = 1;
-    }
-}
-
-if (instance_exists(obj_carryknife))
-{
-    obj_carryknife.y = obj_player.y+4;
-    obj_carryknife.x = obj_player.x+17;
-}
-*/
 </string>
           </argument>
         </arguments>
@@ -648,7 +582,7 @@ if (sprite_index==continuesprite) {continuesprite=-1; image_index=image_number-1
             <kind>1</kind>
             <string>if (visible==true) {draw_sprite(sprite_index,floor(image_index),x,y);}
 
-draw_text(x - 30,y - 50, transition_kind);
+//draw_text(x - 30,y - 50, transition_kind);
 //draw_text(x - 15,y - 20, obj_girlmain.y);
 </string>
           </argument>

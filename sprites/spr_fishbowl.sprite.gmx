@@ -8,8 +8,8 @@
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>10</bbox_right>
-  <bbox_top>1</bbox_top>
-  <bbox_bottom>10</bbox_bottom>
+  <bbox_top>2</bbox_top>
+  <bbox_bottom>11</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -17,7 +17,7 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>11</width>
-  <height>11</height>
+  <height>12</height>
   <frames>
     <frame index="0">images\spr_fishbowl_0.png</frame>
     <frame index="1">images\spr_fishbowl_1.png</frame>
@@ -65,6 +65,5 @@
     <frame index="43">images\spr_fishbowl_43.png</frame>
     <frame index="44">images\spr_fishbowl_44.png</frame>
     <frame index="45">images\spr_fishbowl_45.png</frame>
-    <frame index="46">images\spr_fishbowl_46.png</frame>
   </frames>
 </sprite>
