@@ -14,6 +14,8 @@
       <sprite>sprites\spr_light</sprite>
       <sprite>sprites\spr_paint1</sprite>
       <sprite>sprites\spr_window</sprite>
+      <sprite>sprites\spr_paint2</sprite>
+      <sprite>sprites\spr_paint3</sprite>
     </sprites>
     <sprites name="Bathroom">
       <sprite>sprites\spr_urinwat</sprite>
@@ -70,6 +72,9 @@
       <sprite>sprites\spr_recept</sprite>
       <sprite>sprites\spr_recepthigh</sprite>
       <sprite>sprites\spr_receptdead</sprite>
+      <sprite>sprites\spr_back1</sprite>
+      <sprite>sprites\spr_back1high</sprite>
+      <sprite>sprites\spr_back1dead</sprite>
     </sprites>
     <sprites name="Knife Sprites">
       <sprite>sprites\spr_cleanknife</sprite>
@@ -88,6 +93,8 @@
       <sprite>sprites\spr_smalltable</sprite>
       <sprite>sprites\spr_chairr</sprite>
       <sprite>sprites\spr_chairl</sprite>
+      <sprite>sprites\spr_cola</sprite>
+      <sprite>sprites\spr_fridge</sprite>
     </sprites>
     <sprites name="Blocks">
       <sprite>sprites\spr_up</sprite>
@@ -154,9 +161,12 @@
       <object>objects\obj_smalltable</object>
       <object>objects\obj_chairr</object>
       <object>objects\obj_chairl</object>
+      <object>objects\obj_fridge</object>
+      <object>objects\obj_cola</object>
     </objects>
     <objects name="Office People">
       <object>objects\obj_snitch</object>
+      <object>objects\obj_back1</object>
       <object>objects\Receptionist</object>
     </objects>
     <objects name="Enemies">
@@ -188,6 +198,8 @@
       <object>objects\obj_light</object>
       <object>objects\obj_paint</object>
       <object>objects\obj_window</object>
+      <object>objects\obj_paint2</object>
+      <object>objects\obj_paint3</object>
     </objects>
   </objects>
   <rooms name="rooms">
