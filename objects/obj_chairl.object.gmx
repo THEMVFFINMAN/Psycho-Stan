@@ -58,7 +58,7 @@
         obj_player.imagex_scale = -1
         obj_player.speedx = 0;
         obj_player.vspeed = 0;
-        obj_player.x = x;
+        obj_player.x = x + 6;
         obj_player.y = y;
         depth = 100;
         obj_player.depth = 10;

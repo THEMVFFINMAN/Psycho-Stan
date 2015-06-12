@@ -415,7 +415,7 @@ vspeed=0;
             <kind>1</kind>
             <string>if (keyboard_check_pressed(keydown)) 
 {
-    obj_player.y += 110;
+    obj_player.y += 88;
     
     myfloor = "first";
 }
@@ -443,7 +443,7 @@ vspeed=0;
             <kind>1</kind>
             <string>if (keyboard_check_pressed(keyup)) 
 { 
-    obj_player.y -= 110;    
+    obj_player.y -= 88;    
     myfloor = "second";
 }
 </string>

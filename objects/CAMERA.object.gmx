@@ -25,10 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var yfix = round(obj_player.y - 22);
+            <string>//var yfix = round(obj_player.y - 22);
 var xfix = round(obj_player.x - 10);
 x+=round((xfix-x)/16);
-y+=round((yfix-y)/9);
+y = obj_player.y
+//y+=round((yfix-y)/9);
 </string>
           </argument>
         </arguments>

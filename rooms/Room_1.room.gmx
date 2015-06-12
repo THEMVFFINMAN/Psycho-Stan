@@ -3,8 +3,8 @@
   <caption></caption>
   <width>770</width>
   <height>198</height>
-  <vsnap>1</vsnap>
-  <hsnap>1</hsnap>
+  <vsnap>22</vsnap>
+  <hsnap>22</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>-1</persistent>
@@ -240,9 +240,14 @@
     <instance objName="obj_chairl" x="627" y="66" name="inst_BBCF3BFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_paint3" x="77" y="44" name="inst_DAACA7C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chairl" x="99" y="66" name="inst_010CB5A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spawn" x="451" y="154" name="inst_852FB21D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cooler" x="396" y="44" name="inst_15B366C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorb" x="220" y="66" name="inst_B54AA317" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorg" x="264" y="66" name="inst_7601E25C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spawn" x="528" y="154" name="inst_38E7EE5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fishbowl" x="74" y="159" name="inst_E9190F17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stapler" x="458" y="167" name="inst_4A000C3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knife" x="990" y="286" name="inst_0F1717E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_knife" x="462" y="132" name="inst_3F9FC1B6" locked="0" code="" scaleX="0" scaleY="2.20000004768372" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
