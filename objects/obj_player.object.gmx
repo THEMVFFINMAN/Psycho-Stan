@@ -30,7 +30,7 @@
 //TRY NOT TO CHANGE ANYTHING ON LINE 2 (Below)
 came_from="";cantbehit=false;trans86E=false;dead=false;current_room=room;visibl=false;hit=false;right="Right";left="Left";nowhere="Nowhere";up="Up";down="Down";going=nowhere;continuesprite=-1;keysright=false;keysleft=false;freespace="Free space";liquid="Liquid";in=freespace;inwater=false;hitshock=false;going_to_prev_room=false;going_to_next_room=false;
 transition_kind = 19;
-myfloor="second";
+myfloor="first";
 
 moreknife = false;
 
@@ -185,10 +185,8 @@ if (keyboard_check_direct(vk_shift))
     shift = true;
 else
     shift = false;
+
     
-
-
-
 //Important keyboard checks to keep the movements smooth.\\
 if ( keyboard_check_direct(keyright)|| keyboard_check_direct(ord('D'))&amp;&amp;keysright==false) {move=1; keysright=true;}
 if ( keyboard_check_direct(keyleft )|| keyboard_check_direct(ord('A'))&amp;&amp;keysleft==false)  {move=2; keysleft=true}
@@ -362,7 +360,37 @@ if (instance_exists(obj_carryknife))
         }
         else
             obj_carryknife.depth = -501;
+            
+        if (sprite_index == spr_sitting)
+        {
+            obj_carryknife.depth = 0;
+        }
+        else
+            obj_carryknife.depth = -501;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_elev">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>obj_player.y -= 2;    
 </string>
           </argument>
         </arguments>
@@ -413,11 +441,9 @@ vspeed=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check_pressed(keydown)) 
-{
-    obj_player.y += 88;
-    
-    myfloor = "first";
+            <string>if (keyboard_check_pressed(keydown) || keyboard_check_pressed(ord('S'))) 
+{ 
+    instance_create(x, y, obj_roomtrans);
 }
 </string>
           </argument>
@@ -441,10 +467,9 @@ vspeed=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check_pressed(keyup)) 
+            <string>if (keyboard_check_pressed(keyup) || keyboard_check_pressed(ord('W')))
 { 
-    obj_player.y -= 88;    
-    myfloor = "second";
+    instance_create(x, y, obj_roomtrans);
 }
 </string>
           </argument>
@@ -470,25 +495,12 @@ vspeed=0;
             <kind>1</kind>
             <string>  // DOOR
 
-if ( keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord('W')))
+if ( keyboard_check_pressed(keyup) || keyboard_check_pressed(ord('W')))
 {
     if (room == Room_1)
-    {
-        transition_kind = 20;
-        room_goto(Room_2);
-        //CAMERA.y += 11;
-        //x = obj_girlbath.x;
-        //y = obj_girlbath.y;
-    }
-    
-    if (room == Room_2)
-    {
-        transition_kind = 21;
-        room_goto(Room_1);
-        //CAMERA.y += 11;
-        //x = obj_girlmain.x;
-        //y = obj_girlmain.y;
-    }
+        instance_create(x, y, obj_roomtrans2);
+    else if (room == Room_2)
+        instance_create(x, y, obj_bathtrans);
 }
 </string>
           </argument>
@@ -514,25 +526,12 @@ if ( keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord('W')))
             <kind>1</kind>
             <string>  // DOOR
 
-if ( keyboard_check_pressed(keyup) || keyboard_check_pressed(ord('W')))
+if (keyboard_check_pressed(keyup) || keyboard_check_pressed(ord('W')))
 {
     if (room == Room_1)
-    {
-        transition_kind = 15;
-        room_goto(Room_2);
-        //CAMERA.y -= 44;
-        //x = obj_girlbath.x;
-        //y = obj_girlbath.y;
-    }
-    
-    if (room == Room_2)
-    {
-        transition_kind = 19;
-        room_goto(Room_1);
-        //CAMERA.y -= 44;
-        //x = obj_girlmain.x;
-        //y = obj_girlmain.y;
-    }
+        instance_create(x, y, obj_roomtrans2);
+    else if (room == Room_2)
+        instance_create(x, y, obj_bathtrans);
 }
 </string>
           </argument>
@@ -583,7 +582,7 @@ if (sprite_index==continuesprite) {continuesprite=-1; image_index=image_number-1
             <string>if (visible==true) {draw_sprite(sprite_index,floor(image_index),x,y);}
 
 //draw_text(x - 30,y - 50, transition_kind);
-//draw_text(x - 15,y - 20, obj_girlmain.y);
+//draw_text(x - 15,y - 20, y);
 </string>
           </argument>
         </arguments>

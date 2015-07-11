@@ -59,11 +59,13 @@
         obj_player.vspeed = 0;
         obj_player.x = x;
         obj_player.y = y;
-        depth = 100;
+        obj_player.depth = 0;
+        image_alpha = 0
     }
     else
     {
         image_index = 1;
+        image_alpha = 1;
     }
 }
 else
@@ -81,7 +83,8 @@ if (obj_player.sprite_index == spr_sitting)
 if (obj_player.sprite_index == spr_sitting &amp;&amp; keyboard_check_pressed(ord('E')))
 {
     obj_player.sprite_index = spr_right;
-    depth = 0;
+    obj_player.depth = -500;
+    image_alpha = 1
     keyboard_clear(ord('E'));
 }
 

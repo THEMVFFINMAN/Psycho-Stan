@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0;
-
+            <string>image_speed = 0
 </string>
           </argument>
         </arguments>
@@ -49,37 +48,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>  // DOOR
-if (distance_to_object(obj_player) &lt; 1)
+            <string>if (distance_to_object(obj_player) &lt; 2)
 {
-
-    image_index = 1;
-
-    if ( keyboard_check_pressed(keyup) || keyboard_check_pressed(ord('W')))
-    {
-        if (room == Room_1)
-        {
-            transition_kind = 15;
-            room_goto(Room_2);
-            //CAMERA.y -= 44;
-            //x = obj_girlbath.x;
-            //y = obj_girlbath.y;
-        }
-        
-        if (room == Room_2)
-        {
-            transition_kind = 19;
-            room_goto(Room_1);
-            //CAMERA.y -= 44;
-            //x = obj_girlmain.x;
-            //y = obj_girlmain.y;
-        }
-    }
+    if (image_index == 0)
+        image_index = 1;
 }
 else if (image_index == 1)
-{   
     image_index = 0;
-}
 </string>
           </argument>
         </arguments>

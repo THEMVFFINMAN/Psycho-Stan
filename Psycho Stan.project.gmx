@@ -13,9 +13,12 @@
       <sprite>sprites\spr_stapler</sprite>
       <sprite>sprites\spr_light</sprite>
       <sprite>sprites\spr_paint1</sprite>
+      <sprite>sprites\spr_paint4</sprite>
       <sprite>sprites\spr_window</sprite>
       <sprite>sprites\spr_paint2</sprite>
       <sprite>sprites\spr_paint3</sprite>
+      <sprite>sprites\spr_cube</sprite>
+      <sprite>sprites\spr_cubecov</sprite>
     </sprites>
     <sprites name="Bathroom">
       <sprite>sprites\spr_urinwat</sprite>
@@ -57,6 +60,7 @@
         <sprite>sprites\sprite55</sprite>
       </sprites>
       <sprite>sprites\sprite76</sprite>
+      <sprite>sprites\spr_elevup</sprite>
     </sprites>
     <sprites name="EXP/HP">
       <sprite>sprites\spr_hp_bar</sprite>
@@ -95,6 +99,7 @@
       <sprite>sprites\spr_chairl</sprite>
       <sprite>sprites\spr_cola</sprite>
       <sprite>sprites\spr_fridge</sprite>
+      <sprite>sprites\spr_conftbl</sprite>
     </sprites>
     <sprites name="Blocks">
       <sprite>sprites\spr_up</sprite>
@@ -102,6 +107,9 @@
       <sprite>sprites\spr_block</sprite>
       <sprite>sprites\spr_bathblock</sprite>
       <sprite>sprites\spr_elev</sprite>
+      <sprite>sprites\spr_roomtrans</sprite>
+      <sprite>sprites\spr_roomtrans2</sprite>
+      <sprite>sprites\spr_bathtrans</sprite>
     </sprites>
     <sprites name="Victim">
       <sprite>sprites\spr_victim_death_clean</sprite>
@@ -126,6 +134,7 @@
     <script>scripts\still_frame.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\obj_player</object>
     <objects name="Bathroom">
       <object>objects\obj_mirror</object>
       <object>objects\obj_divider</object>
@@ -139,7 +148,6 @@
       <object>objects\obj_doorg</object>
       <object>objects\obj_bathsink</object>
     </objects>
-    <object>objects\obj_player</object>
     <objects name="Room">
       <object>objects\UP</object>
       <object>objects\DOWN</object>
@@ -150,6 +158,9 @@
       <object>objects\obj_gem</object>
       <object>objects\obj_spawn</object>
       <object>objects\CAMERA</object>
+      <object>objects\obj_roomtrans</object>
+      <object>objects\obj_roomtrans2</object>
+      <object>objects\obj_bathtrans</object>
     </objects>
     <objects name="Office Things">
       <object>objects\obj_cooler</object>
@@ -163,6 +174,7 @@
       <object>objects\obj_chairl</object>
       <object>objects\obj_fridge</object>
       <object>objects\obj_cola</object>
+      <object>objects\obj_conftbl</object>
     </objects>
     <objects name="Office People">
       <object>objects\obj_snitch</object>
@@ -196,10 +208,13 @@
       <object>objects\obj_lamp</object>
       <object>objects\obj_stapler</object>
       <object>objects\obj_light</object>
-      <object>objects\obj_paint</object>
       <object>objects\obj_window</object>
+      <object>objects\obj_paint</object>
       <object>objects\obj_paint2</object>
       <object>objects\obj_paint3</object>
+      <object>objects\obj_paint4</object>
+      <object>objects\obj_cube</object>
+      <object>objects\obj_cubecov</object>
     </objects>
   </objects>
   <rooms name="rooms">
