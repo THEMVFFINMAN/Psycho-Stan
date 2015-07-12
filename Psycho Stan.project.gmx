@@ -134,6 +134,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\wallpaper1</background>
+    <background>background\wallpaper2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
