@@ -115,9 +115,13 @@
     </sprites>
     <sprites name="Victim">
       <sprite>sprites\spr_victim_death_clean</sprite>
+      <sprite>sprites\spr_victim_death_cleanl</sprite>
       <sprite>sprites\spr_victim_death</sprite>
+      <sprite>sprites\spr_victim_deathl</sprite>
       <sprite>sprites\spr_victim</sprite>
+      <sprite>sprites\spr_victiml</sprite>
       <sprite>sprites\spr_victimhigh</sprite>
+      <sprite>sprites\spr_victimhighl</sprite>
     </sprites>
     <sprites name="MISC">
       <sprite>sprites\red</sprite>
@@ -189,8 +193,11 @@
       <object>objects\obj_enemy2</object>
       <object>objects\obj_enemy3</object>
       <object>objects\obj_victim</object>
+      <object>objects\obj_victiml</object>
       <object>objects\obj_victim_dead</object>
+      <object>objects\obj_victim_deadl</object>
       <object>objects\obj_victim_dead_clean</object>
+      <object>objects\obj_victim_dead_cleanl</object>
     </objects>
     <objects name="Knives">
       <object>objects\obj_knife</object>
