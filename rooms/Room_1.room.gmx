@@ -4,7 +4,7 @@
   <width>946</width>
   <height>198</height>
   <vsnap>22</vsnap>
-  <hsnap>22</hsnap>
+  <hsnap>11</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>-1</persistent>
@@ -319,13 +319,15 @@
     <instance objName="obj_paint3" x="77" y="44" name="inst_DAACA7C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chairl" x="99" y="66" name="inst_010CB5A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cooler" x="396" y="44" name="inst_15B366C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_victim" x="462" y="66" name="inst_60F15728" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_victim" x="55" y="66" name="inst_60F15728" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_conftbl" x="209" y="66" name="inst_5805AE45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chairr" x="209" y="66" name="inst_1C25551E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chairl" x="275" y="66" name="inst_066FA76F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_paint4" x="231" y="44" name="inst_96DDF917" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_desk" x="277" y="154" name="inst_CE8F1E5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawn" x="528" y="154" name="inst_C9D7CDD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_copier" x="495" y="66" name="inst_96C01388" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bigdesk" x="55" y="66" name="inst_F882D049" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fishbowl" x="74" y="159" name="inst_E9190F17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stapler" x="458" y="167" name="inst_4A000C3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cubecov" x="237" y="143" name="inst_EC8C11FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

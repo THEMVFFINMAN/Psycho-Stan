@@ -48,19 +48,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(obj_carryknife)  &amp;&amp; (distance_to_point(obj_player.x + 30, obj_player.y)) &lt; 2)
+            <string>if (instance_exists(obj_carryknife) &amp;&amp; ((image_xscale=-1 &amp;&amp; (distance_to_point(obj_player.x - 11, obj_player.y)) == 0)
+    || (image_xscale= 1 &amp;&amp; (distance_to_point(obj_player.x + 30, obj_player.y)) &lt; 1))  )
 {
     if (sprite_index == spr_victim)
         sprite_index = spr_victimhigh
     
-        if (keyboard_check_pressed(ord('E')) &amp;&amp; !moreknife)
-        {
-            keyboard_clear(ord('E'));
-            instance_create(x-1, y, obj_victim_dead);
-            with(obj_carryknife){instance_destroy();}
-            with(obj_victim){instance_destroy();}
-        }
-        
+    if (keyboard_check_pressed(ord('E')) &amp;&amp; !moreknife)
+    {
+        keyboard_clear(ord('E'));
+        instance_create(x-1, y, obj_victim_dead);
+        with(obj_carryknife){instance_destroy();}
+        with(obj_victim){instance_destroy();}
+    }
 }
 else if(sprite_index == spr_victimhigh)
     sprite_index = spr_victim;

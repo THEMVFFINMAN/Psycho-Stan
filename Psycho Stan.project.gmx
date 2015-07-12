@@ -19,6 +19,7 @@
       <sprite>sprites\spr_paint3</sprite>
       <sprite>sprites\spr_cube</sprite>
       <sprite>sprites\spr_cubecov</sprite>
+      <sprite>sprites\spr_bigdesk</sprite>
     </sprites>
     <sprites name="Bathroom">
       <sprite>sprites\spr_urinwat</sprite>
@@ -100,6 +101,7 @@
       <sprite>sprites\spr_cola</sprite>
       <sprite>sprites\spr_fridge</sprite>
       <sprite>sprites\spr_conftbl</sprite>
+      <sprite>sprites\spr_copier</sprite>
     </sprites>
     <sprites name="Blocks">
       <sprite>sprites\spr_up</sprite>
@@ -175,6 +177,7 @@
       <object>objects\obj_fridge</object>
       <object>objects\obj_cola</object>
       <object>objects\obj_conftbl</object>
+      <object>objects\obj_copier</object>
     </objects>
     <objects name="Office People">
       <object>objects\obj_snitch</object>
@@ -215,6 +218,7 @@
       <object>objects\obj_paint4</object>
       <object>objects\obj_cube</object>
       <object>objects\obj_cubecov</object>
+      <object>objects\obj_bigdesk</object>
     </objects>
   </objects>
   <rooms name="rooms">
